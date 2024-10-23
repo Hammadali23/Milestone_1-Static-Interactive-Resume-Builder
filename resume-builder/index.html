@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder Made by Hammad Ali</h1>
+        <form id="resumeForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Full Name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter Your Phone No" required>
+            </div>
+            <div>
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="Enter Your Education" required></textarea>
+            </div>
+            <div>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Enter Your Experience" required></textarea>
+            </div>
+            <div>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" placeholder="Enter Your Skills" required></textarea>
+            </div>
+            <div>
+                <label for="courses">Courses:</label>
+                <textarea id="courses" placeholder="Enter Your Courses"></textarea>
+            </div>
+            <div>
+                <label for="image">Profile Picture:</label>
+                <input type="file" id="image" accept="image/*" required>
+            </div>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Output -->
+        <div id="resumeOutput" class="resume-output">
+            <img id="resumeImage" alt="Profile Picture" class="profile-pic" />
+            <h2 id="resumeName"></h2>
+            <p><strong>Email:</strong> <span id="resumeEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="resumePhone"></span></p>
+            <p><strong>Education:</strong></p>
+            <p id="resumeEducation"></p>
+            <p><strong>Experience:</strong></p>
+            <p id="resumeExperience"></p>
+            <p><strong>Skills:</strong></p>
+            <p id="resumeSkills"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e9eff4, #2fefef, #025c4d);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for form and output */
+.container {
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: skyblue;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    background: linear-gradient(to right, skyblue, #1f0244);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form Styling */
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.3em;
+    color: lightseagreen;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #223b07;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    background-color: #d1e3e0;
+    border-color: #ff9a9e;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #055241, #ff7eb3);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #139178, #ff9a9e);
+    transform: translateY(-3px);
+}
+
+/* Resume Output Styling */
+.resume-output {
+    margin-top: 30px;
+    padding: 30px;
+    background: #fff3f3;
+    border-radius: 15px;
+    border: 1px solid #0d2d6c;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.resume-output h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #034f36;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-output p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.resume-output strong {
+    color: #065678;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Animation for resume output */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adding a gradient to the entire page */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #06b472 0%, #061f8d 100%);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 3px solid #ff6b6b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
